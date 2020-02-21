@@ -34,6 +34,19 @@
     ],
     "collectCoverage": true
   },
+  "nodemonConfig": {
+    "ignore": [
+      "**/*.test.ts",
+      "**/*.spec.ts",
+      ".git",
+      "node_modules"
+    ],
+    "watch": [
+      "src"
+    ],
+    "exec": "npm run dev",
+    "ext": "ts"
+  },
   "devDependencies": {
     "@types/node": "^13.1.7",
     "@typescript-eslint/eslint-plugin": "^2.16.0",
